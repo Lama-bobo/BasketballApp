@@ -157,14 +157,21 @@ class _MyAppState extends State<MyApp> {
                 ],
 
               ),
-          //  ElevatedButton(
-          //               onPressed: () {},
-          //               child: Text('Reset'),
-          //               style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
+              SizedBox(height: 20,),
+                           ElevatedButton(
+                        onPressed: () {
+                        
+                          setState(() {
+                            Team1point=0;
+                            Team2point=0;
+                          });
+                        },
+                        child: Text('Reset',style: TextStyle(color: Colors.amber),),
+                        style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
                        
-          //               ),
+                        ),
 
-          //             ),
+                      ),
             ],
 
 
